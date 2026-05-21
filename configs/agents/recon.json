@@ -1,0 +1,16 @@
+{
+  "id": "recon",
+  "name": "Recon Specialist",
+  "role": "Reconnaissance & attack surface mapping",
+  "providerId": "ikunn",
+  "systemPromptFile": "../claudemd/recon.md",
+  "allowedTools": [
+    "Read",
+    "Grep",
+    "Glob",
+    "Bash",
+    "WebFetch"
+  ],
+  "disallowedTools": [],
+  "maxTurns": 8
+}

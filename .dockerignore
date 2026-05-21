@@ -1,0 +1,15 @@
+node_modules
+**/node_modules
+**/dist
+**/*.tsbuildinfo
+.git
+.vscode
+.idea
+*.log
+workspaces
+.DS_Store
+
+# 可能含密钥的本地文件
+.env
+.env.*
+configs/providers.json

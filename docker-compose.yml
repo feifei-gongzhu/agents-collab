@@ -1,0 +1,30 @@
+services:
+  agents:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: agents:latest
+    container_name: agents-web
+    ports:
+      - "3010:3000"
+    environment:
+      # 任意时区
+      TZ: Asia/Shanghai
+      # 让 CLI 启动时跳过 ExperimentalWarning 自我重启
+      AGENTS_CLI_NOWARN: "1"
+      # 需要走代理时取消下面注释
+      # HTTP_PROXY: http://host.docker.internal:7890
+      # HTTPS_PROXY: http://host.docker.internal:7890
+    volumes:
+      # 1) 群组 / agent / providers 配置 —— 改 JSON 不用重建镜像
+      - ./configs:/app/configs
+      # 2) 会话产物（黑板、turn-log、session.json）持久化
+      - ./workspaces:/app/workspaces
+      # 3) 可选：把宿主机的 CC-Switch DB 挂进来（只读）
+      #    这样容器里能直接复用宿主已经配置好的厂商
+      #    Windows 路径示例：~/.cc-switch -> C:\Users\<你>\.cc-switch
+      - ${CC_SWITCH_DIR:-~/.cc-switch}:/root/.cc-switch:ro
+    restart: unless-stopped
+    # 让容器能访问宿主机网络（解析本地 relay 时用）
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

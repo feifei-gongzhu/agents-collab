@@ -1,0 +1,14 @@
+{
+  "providers": [
+    {
+      "id": "example-local",
+      "name": "Example local relay (sample, edit me)",
+      "env": {
+        "ANTHROPIC_BASE_URL": "http://127.0.0.1:8787",
+        "ANTHROPIC_AUTH_TOKEN": "sk-replace-me",
+        "ANTHROPIC_MODEL": "claude-opus-4-7"
+      },
+      "models": ["claude-opus-4-7"]
+    }
+  ]
+}

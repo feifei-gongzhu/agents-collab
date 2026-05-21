@@ -1,0 +1,18 @@
+{
+  "id": "pro",
+  "name": "Pro Debater",
+  "role": "Argues FOR the proposition",
+  "providerId": "ikunn",
+  "systemPromptFile": "../claudemd/pro.md",
+  "allowedTools": [
+    "Read",
+    "WebFetch",
+    "WebSearch"
+  ],
+  "disallowedTools": [
+    "Bash",
+    "Write",
+    "Edit"
+  ],
+  "maxTurns": 4
+}

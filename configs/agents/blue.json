@@ -1,0 +1,19 @@
+{
+  "id": "blue",
+  "name": "Blue Team",
+  "role": "Detection + response designer",
+  "providerId": "ikunn",
+  "systemPromptFile": "../claudemd/blue.md",
+  "allowedTools": [
+    "Read",
+    "Grep",
+    "Glob",
+    "WebFetch"
+  ],
+  "disallowedTools": [
+    "Bash",
+    "Write",
+    "Edit"
+  ],
+  "maxTurns": 6
+}

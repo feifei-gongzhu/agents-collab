@@ -1,0 +1,16 @@
+{
+  "id": "vuln",
+  "name": "Vulnerability Specialist",
+  "role": "Auth/RCE/business logic vuln hunting",
+  "providerId": "ikunn",
+  "systemPromptFile": "../claudemd/vuln.md",
+  "allowedTools": [
+    "Read",
+    "Grep",
+    "Glob",
+    "Bash",
+    "WebFetch"
+  ],
+  "disallowedTools": [],
+  "maxTurns": 12
+}

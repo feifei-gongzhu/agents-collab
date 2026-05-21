@@ -1,0 +1,10 @@
+{
+  "id": "trio-review",
+  "name": "起草·评审·异议三人组",
+  "description": "Writer 起草 → Reviewer 评审 → Critic 异议，自由 @-mention 调度",
+  "agents": ["writer", "reviewer", "critic"],
+  "metaFile": "../claudemd/group-trio-review.md",
+  "mode": "free",
+  "maxRounds": 9,
+  "consensusMarker": "[CONSENSUS:final]"
+}

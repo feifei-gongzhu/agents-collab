@@ -1,0 +1,20 @@
+{
+  "id": "critic",
+  "name": "Critic",
+  "role": "Devil's advocate against both Writer and Reviewer",
+  "providerId": "ikunn",
+  "systemPromptFile": "../claudemd/critic.md",
+  "allowedTools": [
+    "Read",
+    "Grep",
+    "Glob",
+    "WebFetch",
+    "WebSearch"
+  ],
+  "disallowedTools": [
+    "Bash",
+    "Write",
+    "Edit"
+  ],
+  "maxTurns": 4
+}

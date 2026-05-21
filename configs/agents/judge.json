@@ -1,0 +1,18 @@
+{
+  "id": "judge",
+  "name": "Debate Judge",
+  "role": "Schedules speakers and renders verdict",
+  "providerId": "ikunn",
+  "systemPromptFile": "../claudemd/judge.md",
+  "allowedTools": [
+    "Read"
+  ],
+  "disallowedTools": [
+    "Bash",
+    "Write",
+    "Edit",
+    "WebFetch",
+    "WebSearch"
+  ],
+  "maxTurns": 2
+}

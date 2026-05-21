@@ -1,0 +1,11 @@
+{
+  "id": "dual-debate",
+  "name": "正反辩论 + 仲裁",
+  "description": "Pro / Con 双方辩论，Judge 仲裁",
+  "agents": ["judge", "pro", "con"],
+  "metaFile": "../claudemd/group-dual-debate.md",
+  "mode": "moderator",
+  "moderatorId": "judge",
+  "maxRounds": 8,
+  "consensusMarker": "[CONSENSUS:final]"
+}

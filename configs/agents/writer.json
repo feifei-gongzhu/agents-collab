@@ -1,0 +1,16 @@
+{
+  "id": "writer",
+  "name": "Writer",
+  "role": "Drafts the working solution",
+  "providerId": "ikunn",
+  "systemPromptFile": "../claudemd/writer.md",
+  "allowedTools": [
+    "Read",
+    "Write",
+    "Edit",
+    "Grep",
+    "Glob"
+  ],
+  "disallowedTools": [],
+  "maxTurns": 6
+}

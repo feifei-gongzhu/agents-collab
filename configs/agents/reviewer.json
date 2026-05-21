@@ -1,0 +1,18 @@
+{
+  "id": "reviewer",
+  "name": "Reviewer",
+  "role": "Structured review of Writer's draft",
+  "providerId": "ikunn",
+  "systemPromptFile": "../claudemd/reviewer.md",
+  "allowedTools": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "disallowedTools": [
+    "Bash",
+    "Write",
+    "Edit"
+  ],
+  "maxTurns": 4
+}

@@ -1,0 +1,19 @@
+{
+  "id": "report",
+  "name": "Report Lead",
+  "role": "Findings consolidation & vendor-facing reports",
+  "providerId": "ikunn",
+  "systemPromptFile": "../claudemd/report.md",
+  "allowedTools": [
+    "Read",
+    "Write",
+    "Edit",
+    "Grep",
+    "Glob"
+  ],
+  "disallowedTools": [
+    "Bash",
+    "WebFetch"
+  ],
+  "maxTurns": 8
+}

@@ -1,0 +1,20 @@
+{
+  "name": "agents",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Multi-agent collaboration on top of Claude Code (blackboard architecture)",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "node ./build.mjs",
+    "dev": "node ./build.mjs --watch",
+    "cli": "node packages/cli/dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

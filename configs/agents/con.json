@@ -1,0 +1,18 @@
+{
+  "id": "con",
+  "name": "Con Debater",
+  "role": "Argues AGAINST the proposition",
+  "providerId": "ikunn",
+  "systemPromptFile": "../claudemd/con.md",
+  "allowedTools": [
+    "Read",
+    "WebFetch",
+    "WebSearch"
+  ],
+  "disallowedTools": [
+    "Bash",
+    "Write",
+    "Edit"
+  ],
+  "maxTurns": 4
+}

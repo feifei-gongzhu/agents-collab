@@ -1,0 +1,19 @@
+{
+  "id": "red",
+  "name": "Red Team",
+  "role": "Offensive scenario proposer",
+  "providerId": "ikunn",
+  "systemPromptFile": "../claudemd/red.md",
+  "allowedTools": [
+    "Read",
+    "Grep",
+    "Glob",
+    "WebFetch"
+  ],
+  "disallowedTools": [
+    "Bash",
+    "Write",
+    "Edit"
+  ],
+  "maxTurns": 6
+}

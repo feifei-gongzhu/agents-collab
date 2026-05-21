@@ -1,0 +1,10 @@
+{
+  "id": "red-blue",
+  "name": "红蓝攻防演练",
+  "description": "Red 出攻击路径，Blue 给检测+处置",
+  "agents": ["red", "blue"],
+  "metaFile": "../claudemd/group-red-blue.md",
+  "mode": "free",
+  "maxRounds": 6,
+  "consensusMarker": "[CONSENSUS:final]"
+}
